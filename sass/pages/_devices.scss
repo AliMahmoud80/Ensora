@@ -1,0 +1,25 @@
+.button-nostyle {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.sensor-rows {
+  .sensor-row {
+    height: unset;
+    p {
+      @extend .body;
+      margin: 0;
+      padding: 26px 0;
+    }
+  }
+}
+
+.group-card {
+  margin-bottom: 20px;
+}

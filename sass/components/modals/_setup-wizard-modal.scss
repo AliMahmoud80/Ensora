@@ -1,0 +1,284 @@
+.setup-wizard-modal {
+  @import '../../base/reset';
+  max-width: 560px;
+  min-height: 547px;
+  position: relative;
+  color: $B700;
+  border-radius: 5px;
+  line-height: 22px;
+  /* Remove Later */
+  margin: 50px auto;
+  border: 1px solid $N200;
+  border-radius: 5px;
+
+  .setup-wizard-modal__close-button {
+    padding: 0;
+    position: absolute;
+    top: 26px;
+    right: 22px;
+  }
+  .setup-wizard-modal__content {
+    padding: 0 40px;
+  }
+  .setup-wizard-modal__title {
+    margin-top: 42px;
+
+    h1 {
+      @extend .display-medium;
+    }
+  }
+  .setup-wizard-modal__subtitle {
+    margin-top: 12px;
+    margin-bottom: 60px;
+  }
+  .setup-wizard-modal__form {
+    input {
+      @extend .input;
+      height: 36px;
+      padding: 8px 14px;
+    }
+  }
+  .sensor-modal form input ::placeholder {
+    color: $N500;
+  }
+  .setup-wizard-modal__form div label {
+    @extend .label;
+    color: $N600;
+    margin-bottom: 2px;
+  }
+  .setup-wizard-modal__footer {
+    height: 82px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid $N300;
+    padding: 23px 40px;
+    background-color: $N000;
+
+    button {
+      @extend .button-label;
+      background-color: $B300;
+      color: $N000;
+    }
+    .btn-link {
+      background-color: $N000;
+      color: $B300;
+      margin-right: 24px;
+      text-decoration: none;
+    }
+  }
+
+  /* Confirmation */
+  .setup-wizard-modal__success_icon {
+    margin-top: 118px;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .setup-wizard-modal__confirmation-title {
+    @extend .display-medium;
+    margin-top: 32px;
+
+    margin-bottom: 12px;
+  }
+
+  /* Add Device index */
+  .setup-wizard-modal__qrcode_button {
+    @extend .button-label;
+    height: 36px;
+    padding: 8px 12px;
+
+    border-radius: 5px;
+    background-color: $N300;
+  }
+  .setup-wizard-modal__or {
+    margin-top: 19px;
+    color: $B700;
+    margin-bottom: 7px;
+  }
+  .setup-wizard-modal__options {
+    margin-top: 83px;
+    padding: 0 42px;
+    gap: 25px;
+
+    .option {
+      width: 75px;
+      height: 62px;
+      border-radius: 8px;
+
+      text-align: center;
+      background-color: $N500;
+      color: $N000;
+      @extend .small--regular;
+    }
+  }
+}
+
+/* Sensor */
+.sensor-modal,
+.sensor-min-max-setup-wizard-modal {
+  min-height: 744px;
+
+  .setup-wizard-modal__form-scrollable {
+    height: 489px;
+    overflow: auto;
+
+    // Hide scrollbar
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+  }
+  .setup-wizard-modal__form {
+    & div {
+      margin-bottom: 20px;
+    }
+    & div:last-child {
+      margin-bottom: 0px;
+    }
+
+    .setup-wizard-modal__sensor-details {
+      margin-bottom: 14px;
+
+      div {
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        font-weight: 600;
+        color: $N600;
+
+        :nth-child(2) {
+          margin-top: 6px;
+        }
+      }
+      .sensing-imgs {
+        margin-top: 6px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 9px;
+        }
+      }
+      .setup-wizard-modal__sensor-details .sensing-imgs svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+      }
+      .signal-strength {
+        color: $B700;
+        margin-left: 8px;
+      }
+      .setup-wizard-modal__sensor-details div:nth-child(2) {
+        margin-left: 51px;
+      }
+    }
+    .setup-wizard-modal__show-min-max {
+      margin-bottom: 0;
+
+      div {
+        @extend .flex-center;
+      }
+    }
+    .setup-wizard-modal__show-min-max span {
+      margin-right: 8px;
+      color: #0e76bc;
+      text-decoration: underline;
+    }
+    /* Sensor Min*Max */
+    .setup-wizard-modal__show-min-max span {
+      margin-right: 8px;
+      color: #0e76bc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .min-max-btn-active {
+      color: $N600 !important;
+      font-weight: 600;
+      text-decoration: none !important;
+      cursor: text;
+    }
+    .setup-wizard-modal__min-max-options {
+      margin-top: 0;
+      & div {
+        margin-top: 0;
+      }
+      .col-4 {
+        padding: 0;
+      }
+      .min-max-option {
+        height: 57px;
+        width: 100%;
+        padding: 11px 0px 10px 20px;
+        color: $N600;
+
+        .col-8 {
+          max-width: calc(66.666667% - 15px);
+        }
+
+        .min-max-form {
+          gap: 20px;
+
+          div {
+            width: 144px !important;
+          }
+        }
+      }
+      .min-max-option:nth-child(n + 2) {
+        border-top: 1.5px solid $N300;
+      }
+    }
+  }
+}
+
+/* Sensor Min Max Modal Specifics */
+.sensor-min-max-setup-wizard-modal {
+  .setup-wizard-modal__form {
+    margin-top: 59px;
+    form div {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .setup-wizard-modal__min-max-options div {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+/* Automation Box Modal Specifics */
+.automation-box-modal {
+  .setup-wizard-modal__form {
+    form div {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+/* Gateway Box Modal Specifics */
+.gateway-modal {
+  .setup-wizard-modal__form {
+    form div {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+/* Common */
+.automation-box-modal,
+.gateway-modal,
+.sensor-modal {
+  .setup-wizard-modal__form {
+    margin-top: 59px;
+  }
+  #device-id,
+  #install-data {
+    background: $N100;
+  }
+}

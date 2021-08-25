@@ -1,0 +1,25 @@
+.graph-options-bar {
+  @extend .shadow-sm;
+  border-bottom: 1px solid $N300;
+  padding: 0 40px 15px;
+  background-color: $N000;
+
+  .dropdown {
+    margin-right: 10px !important;
+  }
+}
+.pb {
+  padding-top: 15px !important;
+  border: 1px solid $N300;
+}
+
+.pt {
+  padding: 14px 40px 15px;
+}
+.position-fix {
+  padding: 15px 40px 15px;
+
+  .form-group {
+    margin: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.toast {
+  background: #062b45;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 30px;
+  width: 600px;
+  max-width: none !important;
+
+  .content {
+    padding: 11px 20px;
+    justify-items: baseline;
+    p {
+      margin-bottom: 0;
+      color: $N500;
+    }
+    a {
+      color: $B200;
+      text-decoration: none;
+    }
+  }
+}

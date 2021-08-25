@@ -1,0 +1,30 @@
+.primary-button {
+  @include button($B300, $N000, 12px, 8px);
+  border: none;
+  @extend .button-label;
+  &:hover {
+    color: white;
+  }
+}
+
+.primary-button-icon {
+  @extend .secondary-button;
+  img {
+    vertical-align: middle;
+  }
+  span {
+    @extend .button-label;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+
+// Override Bootstrap's Default
+.btn-primary {
+  background-color: $B300;
+  border: none;
+  &:focus,
+  &:hover {
+    background-color: $B300;
+  }
+}

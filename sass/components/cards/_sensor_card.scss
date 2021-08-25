@@ -1,0 +1,98 @@
+.sensor-cards-container {
+  padding: 0 12px 12px !important;
+  gap: 8px !important;
+
+  .sensor-card {
+    @extend .elevated-sm;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $N300;
+    padding: 7px 0;
+    flex-wrap: wrap;
+    .sensor {
+      margin-right: 20px;
+    }
+    .sensor--temperature,
+    .sensor--humidity {
+      flex: 0 0 12.9%;
+      max-width: 12.9%;
+    }
+
+    .sensor--light {
+      flex: 0 0 17.5%;
+      max-width: 17.5%;
+    }
+
+    .sensor--co2 {
+      flex: 0 0 13.8%;
+      max-width: 13.8%;
+    }
+
+    .sensor-details {
+      margin-right: 40px;
+      flex: 0 0 23.06%;
+      max-width: 23.06%;
+    }
+    .grap-icon {
+      margin-right: 5px;
+    }
+    .sensor-name {
+      @extend .label;
+      color: $B700;
+    }
+    .sensor-alarm-label {
+      margin-left: 10px;
+    }
+    .sensor-status-text {
+      color: $N600;
+      margin-top: 2px;
+      @extend .small;
+      text-align: start;
+    }
+    .sensor-values {
+      gap: 20px;
+    }
+    .sensor-current-value {
+      color: $N700;
+      text-align: start;
+    }
+    .settings-icon--sensors {
+      margin-left: auto;
+      margin-right: 10px;
+      button {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .sense-icon {
+      color: $B700;
+      img {
+        margin-right: 6px;
+        margin-bottom: 7px;
+      }
+    }
+    .sensor-current-value span:nth-child(2) {
+      @extend .display-small;
+    }
+    .sensor-mm-lh {
+      gap: 16px;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    .sensor-mm-lh div span {
+      font-weight: 500;
+      color: $N700;
+    }
+    .value-measurement {
+      gap: 2px;
+      margin-left: 3px;
+
+      span {
+        color: $B700 !important;
+      }
+    }
+  }
+}

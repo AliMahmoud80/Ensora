@@ -1,0 +1,94 @@
+.equipment-cards-container {
+  .col-4 {
+    max-width: calc(33.333333% - 8px);
+  }
+}
+.equipment-card {
+  @extend .elevated-sm;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid $N300;
+  position: relative;
+  padding: 8px 8px 16px 18px;
+  text-align: start;
+
+  .device-details {
+    margin-left: 15px;
+  }
+  .device-name {
+    color: black;
+    @extend .label;
+    margin-top: 11px;
+  }
+  .device-subtitle {
+    color: $N600;
+    @extend .small--regular;
+    margin-top: 6px;
+    padding: 2px 6px;
+    background: $N300;
+    border-radius: 100px;
+  }
+  .change-mode {
+    margin-top: 10px;
+  }
+  .group-power-mode {
+    text-align: start;
+    gap: 10px;
+  }
+  .group-override p {
+    @extend .small--regular;
+    color: $N600;
+    margin-left: 31px;
+    margin-bottom: 4px;
+  }
+  .group-override div {
+    gap: 5px;
+  }
+  .group-power-mode div span:first-child {
+    @extend .small--regular;
+    color: $N600;
+  }
+  .group-power-mode div span:last-child {
+    @extend .body--bold;
+  }
+  .group-power-mode div .active {
+    color: $B200;
+    border: none;
+    @extend .body--bold;
+  }
+  .group-override div button {
+    @extend .flex-center;
+    background: $B300;
+    width: 50px;
+    height: 26px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .group-override div button[disabled] {
+    background: $N200;
+    color: $N400;
+  }
+  .card-titled-tags {
+    margin-top: 8px;
+
+    .tags-title {
+      margin-bottom: 2px;
+    }
+  }
+  .active-dark {
+    color: $B700;
+  }
+  .edit-btn {
+    padding: 0px 4px 4px;
+    border: 1px solid $N300;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  .settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,122 @@
+.group-card {
+  background-color: $N200;
+  border-radius: 8px;
+
+  .group-card-header {
+    position: relative;
+    height: 48px;
+    padding: 8px;
+  }
+  .grap-icon {
+    cursor: pointer;
+  }
+  .group-name {
+    height: 32px;
+    margin-left: 2px;
+    padding: 4px 0;
+
+    p {
+      @extend .heading;
+      color: $B700;
+      padding: 0;
+
+      img {
+        margin: 2px 8px 5px 2px;
+        margin-top: 2px;
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .data-graphs-btn {
+    @extend .small;
+    margin-left: 10px;
+    height: 28px;
+    padding: 4px 8px;
+    background: $N000;
+    border: 2px solid $N300;
+    border-radius: 4px;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+    p {
+      @extend .small;
+      color: $B700;
+    }
+  }
+  .cards-container {
+    padding: 0px 12px 12px;
+    gap: 12px;
+  }
+  .settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  .empty-card-contatiner {
+    padding: 0 12px 12px !important;
+  }
+  .empty-card {
+    background-color: $N000;
+    border-radius: 5px;
+    .empty-msg {
+      padding: 25px 0 16px !important;
+    }
+    p {
+      @extend .body;
+      margin: 0;
+      padding: 26px 0;
+    }
+    button {
+      margin-bottom: 26px;
+    }
+  }
+
+  // for inner cards
+  .cards-container .settings-icon {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    margin: 0;
+  }
+}
+
+.device-thumbnail {
+  width: 68px;
+  height: 68px;
+  background-color: white;
+  border: solid 2px $N300;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 60px;
+    height: 60px;
+    background-color: $N200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.settings-icon--new {
+  button {
+    width: 32px;
+    height: 32px;
+  }
+  i {
+    color: $N500;
+    font-size: 16px;
+  }
+}

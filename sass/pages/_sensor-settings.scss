@@ -1,0 +1,27 @@
+.setup-wizard-modal {
+  .switch-container {
+    width: 105%;
+    margin-bottom: 10px !important;
+
+    label {
+      margin-left: 8px;
+      font-weight: 400 !important;
+      line-height: 20px;
+      color: $B700 !important;
+    }
+  }
+  .calibration-btns {
+    padding: 10px 0;
+    gap: 12px;
+
+    button {
+      border: 2px solid $N300;
+    }
+  }
+  .calibration-footer {
+    margin-left: calc(3px + 33.333333% + 8px);
+  }
+  .loader {
+    margin-bottom: 10px !important;
+  }
+}

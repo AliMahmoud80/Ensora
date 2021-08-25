@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../sass/main.css" />
+    <title>Equipment</title>
+  </head>
+
+  <body>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="main-page p-0">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content settings-header">
+          <!-- header -->
+          <div
+            class="d-flex main-content__header justify-content-between settings-title settings-title-position"
+          >
+            <div class="d-flex">
+              <a href="#">
+                <img
+                  class="back-arrow"
+                  src="../../../assets/icon-back-arrow.svg"
+                  alt="Back"
+                />
+              </a>
+              <!-- Thumbnail -->
+              <div class="header-thumbnail">
+                <div class="device-thumbnail device-thumbnail--settings">
+                  <div>
+                    <img src="../../../assets/icon-fans.svg" alt="" />
+                    <div class="add-photo-btn">
+                      <button
+                        class="button-nostyle d-flex justify-content-center align-items-center"
+                      >
+                        <img src="../../../assets/Add photo btn.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Thumbnail -->
+              <div class="d-flex flex-column">
+                <div class="d-flex">
+                  <span class="title">
+                    Lettuce Fan
+                    <span class="label d-inline-flex align-items-center">
+                      <span class="device-subtitle">Automation box A</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card-tags">
+                    <div class="tag dark-tag">
+                      GreenHouse A
+                      <img
+                        class="close-icon"
+                        src="../../../assets/icon-close.svg"
+                        alt="remove"
+                      />
+                    </div>
+                  </div>
+                  <div class="add-btn">
+                    <button class="btn">
+                      <img src="../../../assets/icon-add.svg" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Graph Options Bar -->
+          <div class="graph-options-bar pb row m-0 shadow-sm">
+            <div
+              class="col-12 p-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="col-md-2 p-0">
+                <div class="timeframe-selector">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Last week</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly"
+                          >Last week</span
+                        >
+                        <span class="custom-option" data-value="Last 5 min"
+                          >Last 5 min</span
+                        >
+                        <span class="custom-option" data-value="Last hour"
+                          >Last hour</span
+                        >
+                        <span class="custom-option" data-value="Last 24 hours"
+                          >Last 24 hours</span
+                        >
+                        <span class="custom-option" data-value="Last month"
+                          >Last month</span
+                        >
+                        <span
+                          class="custom-option"
+                          data-value="Select date range"
+                          >Select date range</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Graph Options Bar -->
+        </div>
+        <!-- middle section -->
+        <div
+          class="row mid-section align-items-center flex-column text-center p-20-40 m-0"
+        >
+          <div class="row graph-box-container d-flex p-0">
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div
+                class="graph-box-header d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-self-start">
+                  <img src="../../../assets/icon-grap.svg" alt="grap" />
+                  <p class="d-flex g-10px">
+                    <img src="../../../assets/icon-fans.svg" >
+                    Lettuce Fan
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="change-mode d-flex justify-content-between">
+                    <div class="group-power-mode d-flex">
+                      <div class="d-flex flex-column">
+                        <span>Power</span>
+                        <span>Off</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span>Mode</span>
+                        <span class="active">Auto</span>
+                      </div>
+                    </div>
+                    <div class="group-override d-flex flex-column">
+                      <p>Override</p>
+                      <div class="d-flex">
+                        <button class="btn btn-primary">On</button>
+                        <button class="btn btn-primary">Off</button>
+                        <button class="btn" disabled>Auto</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-light download-btn">
+                    <img
+                      src="../../../assets/icon-download.svg"
+                      alt="Download"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="graph-box-content">
+                <div class="graph-box-content" id="lettuce-fan">
+                  <svg class="graph">
+                    <g class="rects-group"></g>
+                    <g class="yaxis-group"></g>
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph Box -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/page-loader.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/graphs/utils.js"></script>
+    <script src="../../../js/graphs/Equipments/fans-graph.js"></script>
+    <script src="../../../js/graphs/Equipments/Equipments-settings-lettuce-fan.js"></script>
+  </body>
+</html>

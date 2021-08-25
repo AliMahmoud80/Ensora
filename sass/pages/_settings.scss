@@ -1,0 +1,487 @@
+.main-content__header {
+  button {
+    height: 36px;
+    width: 36px;
+    img {
+      height: unset;
+      width: unset;
+    }
+  }
+}
+
+.main-content__header--settings {
+  span {
+    margin-left: 14px;
+  }
+}
+
+.gear-button {
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+  background-color: $N300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-section__form {
+  background-color: white;
+  border: solid 1px $N300;
+  border-radius: 8px;
+  padding: 30px 40px 40px;
+  margin: 0;
+}
+
+.mid-section__form__inputs {
+  padding: 0;
+  margin-bottom: 20px;
+  div:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  #device-id,
+  #install-date {
+    background-color: $N100;
+  }
+}
+
+.switches-container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px $N300;
+}
+
+.switch__left {
+  padding: 39px 0;
+  flex: 0 0 14%;
+  max-width: 14%;
+  p {
+    @extend .body--bold;
+    color: $B700;
+    margin-right: 15px;
+    margin-bottom: 0;
+    width: 25px;
+  }
+
+  label {
+    @extend .input;
+    color: $B700;
+  }
+}
+
+.settings-custom-select {
+  flex: 0 0 18.4%;
+  max-width: 18.4%;
+}
+.settings-name-text-input {
+  flex: 0 0 29.1%;
+  max-width: 29.1%;
+  margin-right: 20px;
+}
+
+.device-thumbnail--settings .add-photo-btn {
+  position: absolute;
+  background-color: white;
+  top: -6px;
+  left: 42px;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  button {
+    border: 1px solid $N300;
+    border-radius: 5px;
+    width: 28px;
+    height: 28px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.switch-image {
+  margin-left: 41px;
+  .switch-image__uploaded-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+}
+
+.device-thumbnail--settings {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.dropdown {
+  margin-left: 20px;
+  margin-right: 20px;
+  select {
+    @extend .input;
+  }
+}
+
+.form__switch__text {
+  margin-right: 20px;
+  input {
+    height: 36px;
+  }
+}
+
+.min-voltage {
+  @extend .form__switch__text;
+  margin-right: 10px;
+  align-self: flex-start;
+  flex: 0 0 9.8%;
+  max-width: 9.8%;
+  margin-top: 9px;
+}
+
+.primary-button--settings {
+  margin-top: 40px;
+  @include button($B300, $N000, 57.5px, 8px);
+  border: none;
+  @extend .button-label;
+  &:hover {
+    color: white;
+  }
+}
+
+// custom switch
+
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 38px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 1.7px;
+  content: "";
+  height: 17px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 17px;
+}
+.slider-lg {
+  @extend .slider;
+  width: 49px;
+  height: 28px;
+}
+.slider-lg:before {
+  @extend .slider;
+  width: 22px;
+  height: 22px;
+  bottom: 2.7px;
+  left: 7px;
+}
+input:checked + .slider {
+  background-color: $B300;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-label {
+  margin: 0;
+  margin-left: 8px;
+}
+.content-title {
+  color: $B700 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.settings-header {
+  padding: 0;
+
+  .settings-title-position {
+    margin: 0 !important;
+    padding: 12px 40px !important;
+  }
+  .settings-title {
+    padding: 20px 40px 12px;
+    // margin: 20px 40px 12px;
+    background: white;
+
+    .back-arrow {
+      width: auto;
+      height: auto;
+      align-self: start;
+      cursor: pointer;
+    }
+    .title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .ml-14 {
+      margin-left: 14px;
+    }
+    .label img {
+      width: auto;
+      height: auto;
+    }
+    .label span {
+      color: $N600;
+      font-size: 11px;
+      line-height: 14px;
+      padding: 2px 6px;
+      background: $N300;
+      border-radius: 100px;
+    }
+    .header-thumbnail {
+      margin: 0 14px;
+      button {
+        width: 28px !important;
+      }
+    }
+    .add-btn {
+      margin-left: 5px;
+    }
+    .card-tags {
+      margin-top: 6px;
+
+      .dark-tag {
+        background-color: $N300;
+        color: $B700;
+      }
+    }
+    .close-icon {
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+      margin-top: -3px;
+      cursor: pointer;
+    }
+    .gear-button {
+      background-color: $N300;
+      &::after {
+        content: none !important;
+      }
+    }
+    .edit-sensors-btn {
+      @extend .gear-button;
+      margin-right: 12px;
+      gap: 8px;
+    }
+  }
+  .settings-title .title {
+    @extend .display-medium;
+  }
+  .navbar {
+    height: auto;
+  }
+
+  .settings-tabs-nav {
+    @extend .shadow-md;
+    height: 38px;
+    padding-top: 12px;
+    background: white;
+    padding: 0 40px;
+  }
+  .navbar-nav {
+    gap: 11px;
+  }
+  .settings-tabs-nav li a {
+    color: $N600;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 20px !important;
+  }
+  .active {
+    border-bottom: 2px solid $B300;
+    .nav-link {
+      color: $B300 !important;
+    }
+  }
+
+  .setup-wizard-modal {
+    min-height: auto !important;
+
+    .setup-wizard-modal__form {
+      margin: 0;
+    }
+  }
+}
+.settings-content {
+  padding: 20px 40px;
+  text-align: start;
+  color: $B700;
+
+  .settings-card {
+    background: $N000;
+    border: 1px solid $N300;
+    border-radius: 8px;
+    gap: 40px;
+    padding: 30px 40px 40px;
+
+    .settings-card-content {
+      .setup-wizard-modal {
+        border: 0;
+      }
+      .sensor-modal {
+        width: 480px;
+
+        .setup-wizard-modal__min-max-options:last-of-type {
+          margin-bottom: 0 !important;
+        }
+
+        .calibration-options {
+          .min-max-option {
+            .min-max-form {
+              width: 67% !important;
+              div {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+      .single-select-dropdown {
+        margin-bottom: 10px !important;
+      }
+    }
+    .payment-settings {
+      .form-group {
+        margin-bottom: 20px !important;
+      }
+      &:first-of-type .form-row:last-of-type {
+        margin-bottom: -20px !important;
+      }
+    }
+    .content-save-section {
+      .save-btn {
+        width: 148px !important;
+      }
+    }
+    .settings-card-title {
+      @extend .shadow-md;
+      margin-bottom: 20px;
+      padding-bottom: 26px;
+      color: $B700;
+      position: relative;
+
+      h3 {
+        @extend .display-small;
+        margin-bottom: 0;
+      }
+      .create-group-btn {
+        padding: 8px 47.5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .setup-wizard-modal__sensor-details {
+      .sensing-imgs {
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .setup-wizard-modal__min-max-options div {
+    margin: 0 !important;
+  }
+  .setup-wizard-modal__show-min-max img {
+    margin-bottom: -4px;
+  }
+  .save-btn {
+    width: 110px;
+  }
+}
+.sensing-imgs {
+  gap: 12px;
+}
+.reports {
+  color: $B700;
+  padding: 4px 20px 23px;
+  border-bottom: 1px solid $N300;
+
+  .report-title {
+    @extend .heading;
+    margin-bottom: 5px;
+  }
+  .report-description {
+    @extend .body;
+    color: $N600;
+  }
+  .our-custom-select-wrapper {
+    width: 122px !important;
+  }
+}
+.send-notification-switch {
+  margin-top: 4px;
+
+  .switch-label {
+    @extend .body;
+    color: $B700 !important;
+    margin-left: 15px !important;
+  }
+}
+.integration-cards-container {
+  margin-top: 40px;
+
+  .col-md-4 {
+    max-width: calc(33.333333% - 14px) !important;
+  }
+  .rectangle-card {
+    height: 222px;
+  }
+  .add-integration-btn {
+    margin-top: auto;
+  }
+}
+.ensora-pin {
+  font-weight: 700 !important;
+}
+.copy-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 36px;
+  width: 36px;
+  margin-top: 7px;
+}
+.credit-cards {
+  margin-bottom: 17px;
+}
+.subscription-settings {
+  .rectangle-card {
+    margin-top: 20px;
+    min-width: 330px;
+  }
+}

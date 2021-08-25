@@ -1,0 +1,41 @@
+.grid-compact {    
+  .btn-group {
+    height: 100%;
+  }
+  .grid-compact-switch {
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid $N300;
+    
+    button {
+      width: auto;
+      background-color: $N200;
+      opacity: .5;
+    }
+  }
+  .grid-compact-switch button {
+    @extend .flex-center;
+    @extend .button-label;
+    color: $N500;
+    padding: 8px;
+  }
+  .grid-compact-switch button:hover,
+  .grid-compact-switch button:focus {
+    color: $N500;
+    box-shadow: none;
+  }
+  .grid-compact-switch button:active,
+  .switch-active {
+    @extend .shadow-sm;
+    background-color: $N000 !important;
+    opacity: 1 !important;
+    outline: 0 !important;
+    color: $B700 !important;
+    border: 0;
+    border-right: 1px solid $N300 !important;
+    border-left: 1px solid $N300 !important;
+    border-radius: 5px !important;
+    z-index: 2;
+    box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05) !important;
+  }
+}

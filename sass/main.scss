@@ -1,0 +1,93 @@
+/* Abstract */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/* Base */
+@import "base/fonts";
+@import "base/typography";
+@import "base/global";
+@import "base/utils";
+
+/* Layout */
+@import "layouts/sidebar";
+@import "layouts/navbar";
+
+/* Components */
+// Modals
+@import "components/modals/setup-wizard-modal";
+@import "components/modals/presentation-modal";
+@import "components/modals/spotlight_modal";
+@import "components/modals/full-screen-modal";
+@import "components/modals/modal-default";
+@import "components/modals/modal-confirm";
+@import "components/modals/integrate-app-modal";
+@import "components/modals/add-sensor-modal";
+@import "components/modals/scene-modal";
+@import "components/modals/uploadphoto-modal";
+@import "components/modals/confirmation-modals";
+@import "components/modals/power-adjustment-modals";
+@import "components/modals/daily-cycle-modals";
+@import "components/modals/adjust-min-max-modal";
+// Cards
+@import "components/cards/group-card";
+@import "components/cards/sensor_card";
+@import "components/cards/automation-box-card";
+@import "components/cards/device-sensors-card";
+@import "components/cards/equipment_card";
+@import "components/cards/gateway-card";
+@import "components/cards/scene-card";
+@import "components/cards/routine-card";
+@import "components/cards/routine-condition";
+@import "components/cards/graph-box";
+@import "components/cards/rectangle-card";
+@import "components/cards/help-card";
+// Buttons
+@import "components/buttons/add-device-btn";
+@import "components/buttons/close-btn";
+@import "components/buttons/dropdown-btn";
+@import "components/buttons/mm-lh-btn";
+@import "components/buttons/grid-compact-swtich";
+@import "components/buttons/btn-large";
+@import "components/buttons/primary_btn";
+@import "components/buttons/secondary-btn";
+@import "components/buttons/btn-text";
+// Others
+@import "components/form-container";
+@import "components/onboard-container";
+@import "components/registering-loader";
+@import "components/alarm";
+@import "components/routines-filter";
+@import "components/toast";
+@import "components/hotspot";
+@import "components/loader";
+@import "components/cards/card-tags";
+@import "components/cards/card-titled-tags";
+@import "components/single-select-dropdown";
+@import "components/tags-input";
+@import "components/sensor-status";
+@import "components/graph-options-bar";
+@import "components/custom-select";
+@import "components/notification-settings-box";
+@import "components/notifications-table";
+@import "components/routine-tags-list";
+@import "components/invoice-table";
+@import "components/custom-datepicker";
+@import "components/edit-sensors";
+@import "components/tooltips";
+@import "components/range";
+@import "components/graph-switches-bar";
+@import "components/cards/card-container-no-group";
+@import "components/search-input";
+@import "components/tag-secondary";
+@import "components/input-with-tags";
+
+/* Pages */
+@import "pages/index";
+@import "pages/home";
+@import "pages/alarms";
+@import "pages/devices";
+@import "pages/onboarding";
+@import "pages/sensor-settings";
+@import "pages/settings";
+@import "pages/choose-plan";
+@import "pages/help";

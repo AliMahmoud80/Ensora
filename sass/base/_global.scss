@@ -1,0 +1,154 @@
+body {
+  @extend .body;
+  font-family: $font-stack;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+#side-bar-container {
+  flex: 0 0 17.362%;
+  max-width: 17.362%;
+}
+
+// Override Bootstrap Defaults
+.form-container {
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
+}
+label {
+  @extend .label;
+  color: $N600;
+  margin-bottom: 2px;
+}
+.radio-label {
+  @extend .label;
+  margin-bottom: 8px;
+}
+input,
+select,
+textarea {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  padding: 8px 14px;
+  color: $B700 !important;
+
+  &::placeholder {
+    color: $N500 !important;
+  }
+}
+input[type='checkbox'] {
+  outline: 2px solid $N300;
+  outline-style: auto;
+}
+// remove outline in firefox only
+@-moz-document url-prefix() {
+  input[type='checkbox'] {
+    outline-style: none;
+  }
+}
+input[type='checkbox']:checked {
+  outline-style: none;
+}
+.form-control {
+  border: 2px solid $N300 !important;
+
+  &:focus,
+  input:focus {
+    border-color: #86b7fe !important;
+  }
+}
+.form-check {
+  .form-check-input {
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
+    border: 2px solid $N300;
+  }
+}
+textarea {
+  padding: 8px 14px !important;
+}
+.btn-nostyle {
+  border: none !important;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 4px;
+  }
+  .icon-mt {
+    position: relative;
+    margin-top: 7px;
+  }
+}
+.btn {
+  @extend .button-label;
+  padding: 8px 12px;
+}
+.btn-primary {
+  background-color: $B300;
+}
+.btn-secondary {
+  background-color: $N300;
+  color: $B700;
+  border-color: $N300;
+}
+.btn-outline-primary {
+  color: $B300;
+  outline: none;
+  border: none;
+
+  &:focus,
+  &:hover {
+    color: $B300 !important;
+    background: transparent !important;
+    box-shadow: none;
+  }
+  img {
+    margin-top: -1.9px !important;
+    margin-right: 5px !important;
+  }
+}
+.btn-primary[disabled] {
+  pointer-events: none;
+  border: none;
+  background-color: $N200;
+  color: $N400;
+}
+.btn-light {
+  border: 2px solid $N300;
+  border-radius: 5px;
+  background: white;
+}
+.btn-icon-sm {
+  @extend .flex-center;
+  width: 28px;
+  height: 28px;
+}
+.btn-height {
+  height: 36px;
+}
+.gear-button {
+  padding: 8px !important;
+}
+.form-control:disabled {
+  background: $N100;
+  color: $N500 !important;
+  border: 2px solid $N300;
+}

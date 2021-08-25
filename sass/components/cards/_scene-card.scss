@@ -1,0 +1,32 @@
+.scene-cards-container {
+  gap: 6px !important;
+
+  .col-md-4 {
+    max-width: calc(33.333333% - 4px);
+  }
+  
+  .scene-card {
+    @extend .elevated-sm;
+    min-height: 98px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid $N300;
+    position: relative;
+    padding: 12px;
+  
+    .scene-details {
+      margin-left: 13px;
+    }
+    .scene-name {
+      color: black;
+      text-align: start;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card-titled-tags {
+      .tags-title {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}

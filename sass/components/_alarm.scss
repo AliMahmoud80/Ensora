@@ -1,0 +1,40 @@
+.alarm {
+  margin-top: 15px;
+  height: 58px;
+  padding: 15px;
+
+  .alarm-content {
+    img {
+      margin-right: 15px;
+    }
+    p {
+      color: $N800;
+      margin: 4px 0 0;
+      @extend .body--bold;
+    }
+  }
+  .view-alarms-btn {
+    @extend .flex-center;
+    height: 36px;
+    border: 2px solid $N300 !important;
+    border-radius: 5px;
+  }
+}
+.alarm-active {
+  background-color: #fdefef;
+  border-top: 3px solid $R300;
+
+  .alarm-all-good-icon {
+    display: none;
+  }
+}
+.alarm-all-good {
+  background-color: #f1f9f0;
+  border-top: 3px solid $G300;
+  .alarm-active-icon {
+    display: none;
+  }
+  .view-alarms-btn {
+    display: none;
+  }
+}
